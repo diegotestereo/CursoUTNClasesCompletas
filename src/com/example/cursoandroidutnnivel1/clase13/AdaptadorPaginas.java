@@ -16,9 +16,10 @@ import com.example.cursoandroidutnnivel1.R;
 public class AdaptadorPaginas extends PagerAdapter 
 {	
 	
-	public AdaptadorPaginas()
+	Context ctx;
+	public AdaptadorPaginas(Context ctx)
 	{
-		// TODO Auto-generated constructor stub
+		this.ctx = ctx;
 	}
 	
 //	ArrayList<Casa>casas; 
@@ -47,15 +48,16 @@ public class AdaptadorPaginas extends PagerAdapter
         switch (position)
 		{
 		case 0:
-			imageView.setImageDrawable(collection.getResources().getDrawable(R.drawable.arg));
+			imageView.setImageDrawable(ctx.getResources().getDrawable(R.drawable.arg));
 			break;
 		case 1:
-			imageView.setImageDrawable(collection.getResources().getDrawable(R.drawable.bar));
+			imageView.setImageDrawable(ctx.getResources().getDrawable(R.drawable.bar));
 			break;
 
 		default:
 			break;
 		}
+       
         ((ViewPager) collection).addView(view, 0);
         return view;
     }

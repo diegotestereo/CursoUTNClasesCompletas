@@ -42,7 +42,7 @@ public class lay_autocomplete extends Activity
 		//levanto el paginador (objeto XML)
 		ViewPager paginador = (ViewPager)findViewById(R.id.imagepager);
 		//creo el adaptador
-		AdaptadorPaginas adap_pag = new AdaptadorPaginas();
+		AdaptadorPaginas adap_pag = new AdaptadorPaginas(getApplicationContext());
 		//selecciono el paginador y le asigno el adaptador
 		paginador.setAdapter(adap_pag);
 		//selecciono el primer item por las dudas, puedo seleccionar como inicio otros
