@@ -14,6 +14,7 @@ import android.support.v4.app.FragmentActivity;
 import android.widget.Toast;
 
 import com.example.cursoandroidutnnivel1.R;
+/*
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -26,13 +27,13 @@ import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
-
+*/
 //tengo que extender de FragmentActivity porque estoy manipulando un fragmento
 public class lay_mapa extends FragmentActivity 
-{
-	private GoogleMap mapa;
+{/*
+	//private GoogleMap mapa;
 	private LocationManager locationManager;
-	private LocationListener listenerGPS;
+	//private LocationListener listenerGPS;
 
 	@Override
 	protected void onCreate(Bundle arg0) 
@@ -149,6 +150,7 @@ public class lay_mapa extends FragmentActivity
 	}
 
 	public class LocationListener implements android.location.LocationListener
+
 	{
 		//cuando cambia la ubicación
 		public void onLocationChanged(Location location) 
@@ -180,4 +182,8 @@ public class lay_mapa extends FragmentActivity
 		{
 		}
 	}
+	
+	*/
+	
+	
 }
